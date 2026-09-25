@@ -1,0 +1,783 @@
+{
+  "status": "native Ensemble 1.x prototype; not boot-tested",
+  "input_skeleton_sha256": "848f5afb43a2184b01d2a4ad3231957b6ab9936006b23b4b2a260d1224d44370",
+  "input_notepad_sha256": "edc48848ff4b9d2880e715bbb29532f14b3b54293c45159c467e33e2af841d1b",
+  "input_viewer_sha256": "3d433a39c455a9cea242763dad0e3f681b4196fb7b1a75a08ca47e1aa8aa4a30",
+  "input_terminal_sha256": "2d66ac2ff9fd24c4591303b2cba7cec6f40f0d52b4f3d75d9e0cdaa5fc1be542",
+  "source_sha256": "a6993997dea16ba26b73d4b78ce03a7144a3f2d8f2ab6b92de4535e75e1b948e",
+  "state_tag": 2795059607,
+  "sha256": "0d3de500b3d6cce7da9f654fd4c5a035e1c0630a9479e800e973bab56a62652a",
+  "geode_bytes": 107650,
+  "code_bytes": 31798,
+  "engine_resource_bytes": 65520,
+  "engine_data_end": 53184,
+  "private_stack_headroom": 12320,
+  "native_uninitialized_and_stack_bytes": 8192,
+  "cpu": "80386 or newer",
+  "kernel_protocol": [
+    622,
+    3
+  ],
+  "imports": [
+    {
+      "index": 0,
+      "name": "ui",
+      "attributes": 16384,
+      "protocol": [
+        693,
+        0
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "message": 2561,
+      "handler": "native_open",
+      "offset": 47
+    },
+    {
+      "message": 2563,
+      "handler": "native_close",
+      "offset": 282
+    },
+    {
+      "message": 4,
+      "handler": "native_attach",
+      "offset": 273
+    },
+    {
+      "message": 87,
+      "handler": "native_view_closed",
+      "offset": 346
+    },
+    {
+      "message": 73,
+      "handler": "native_expose",
+      "offset": 367
+    },
+    {
+      "message": 195,
+      "handler": "native_select",
+      "offset": 401
+    },
+    {
+      "message": 123,
+      "handler": "native_key",
+      "offset": 463
+    },
+    {
+      "message": 3073,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3074,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3075,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3076,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3077,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3078,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3079,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3080,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3081,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3082,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3083,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3087,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3088,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3089,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3090,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3091,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3092,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3093,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3094,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3095,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3096,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3097,
+      "handler": "native_command",
+      "offset": 565
+    },
+    {
+      "message": 3101,
+      "handler": "native_command",
+      "offset": 565
+    }
+  ],
+  "ui": {
+    "input_chunk": 58,
+    "address_chunk": 44,
+    "view_chunk": 62,
+    "primary_chunk": 36,
+    "buttons": [
+      {
+        "chunk": 46,
+        "label": "Go",
+        "action": 15
+      },
+      {
+        "chunk": 68,
+        "label": "New",
+        "action": 11
+      },
+      {
+        "chunk": 70,
+        "label": "Open...",
+        "action": 2
+      },
+      {
+        "chunk": 72,
+        "label": "Save",
+        "action": 3
+      },
+      {
+        "chunk": 74,
+        "label": "Save As...",
+        "action": 4
+      },
+      {
+        "chunk": 76,
+        "label": "Undo / Redo",
+        "action": 5
+      },
+      {
+        "chunk": 78,
+        "label": "Clear Cell",
+        "action": 16
+      },
+      {
+        "chunk": 90,
+        "label": "Fill Range...",
+        "action": 17
+      },
+      {
+        "chunk": 64,
+        "label": "Edit Cell",
+        "action": 29
+      },
+      {
+        "chunk": 66,
+        "label": "Revert Edit",
+        "action": 24
+      },
+      {
+        "chunk": 80,
+        "label": "Previous Rows",
+        "action": 6
+      },
+      {
+        "chunk": 82,
+        "label": "Next Rows",
+        "action": 7
+      },
+      {
+        "chunk": 84,
+        "label": "Previous Columns",
+        "action": 8
+      },
+      {
+        "chunk": 86,
+        "label": "Next Columns",
+        "action": 9
+      },
+      {
+        "chunk": 88,
+        "label": "Help",
+        "action": 10
+      },
+      {
+        "chunk": 104,
+        "label": "Open",
+        "action": 19
+      },
+      {
+        "chunk": 106,
+        "label": "Cancel",
+        "action": 23
+      },
+      {
+        "chunk": 122,
+        "label": "Save",
+        "action": 20
+      },
+      {
+        "chunk": 124,
+        "label": "Cancel",
+        "action": 23
+      },
+      {
+        "chunk": 136,
+        "label": "Fill",
+        "action": 18
+      },
+      {
+        "chunk": 138,
+        "label": "Cancel",
+        "action": 23
+      },
+      {
+        "chunk": 150,
+        "label": "Discard",
+        "action": 22
+      },
+      {
+        "chunk": 152,
+        "label": "Cancel",
+        "action": 23
+      }
+    ],
+    "objects": [
+      36,
+      40,
+      44,
+      46,
+      48,
+      50,
+      52,
+      58,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      144,
+      146,
+      148,
+      150,
+      152,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170
+    ],
+    "menus": [
+      48,
+      50,
+      52
+    ],
+    "dialogs": {
+      "open": 96,
+      "save_as": 112,
+      "fill": 128,
+      "discard": 144,
+      "help": 160
+    },
+    "file_selectors": [
+      98,
+      114
+    ],
+    "dialog_status": [
+      100,
+      118,
+      132
+    ],
+    "grid": {
+      "x": 32,
+      "y": 24,
+      "cell_width": 92,
+      "cell_height": 20,
+      "rows": 10,
+      "columns": 5
+    },
+    "viewport": {
+      "width": 512,
+      "height": 280
+    },
+    "field_widths": {
+      "address": 42,
+      "formula": 294
+    },
+    "help": {
+      "title_trigger": 88,
+      "title_hint_hex": "0142040044400400",
+      "dialog": 160,
+      "display": 162,
+      "page_up": 166,
+      "page_down": 168,
+      "close": 170,
+      "native_messages": [
+        8811,
+        8812
+      ],
+      "text_characters": 2438
+    },
+    "keyboard": {
+      "message": 123,
+      "focus": "GenView 0x003e",
+      "edit_action": 29,
+      "help_shortcut": 3968,
+      "edit_shortcut": 3969,
+      "view_control_key_bit": 64
+    },
+    "templates": [
+      "SPINTEXT.GEO: native primary/row/editor/view",
+      "NOTEPAD.GEO: native menu and trigger",
+      "VIEWER.GEO: native file selectors, dialogs, filename field and reply bar",
+      "TERM.GEO: native read-only GenText display",
+      "VIEWER.GEO R12: native scrollable help dialog and paging controls",
+      "VIEWER.GEO R28: native title-bar Help trigger/hint"
+    ]
+  },
+  "instrumentation": {
+    "core": {
+      "poll_sites": 557,
+      "original_instructions": 1936,
+      "bounded_repeat_expansions": 7,
+      "maximum_straight_line_instructions_between_polls": 8
+    },
+    "document": {
+      "poll_sites": 458,
+      "original_instructions": 1555,
+      "bounded_repeat_expansions": 6,
+      "maximum_straight_line_instructions_between_polls": 8
+    },
+    "runtime": {
+      "poll_sites": 41,
+      "original_instructions": 237,
+      "bounded_repeat_expansions": 0,
+      "maximum_straight_line_instructions_between_polls": 8
+    },
+    "native_ui": {
+      "poll_sites": 499,
+      "original_instructions": 1580,
+      "bounded_repeat_expansions": 0,
+      "maximum_straight_line_instructions_between_polls": 8
+    }
+  },
+  "symbol_offsets": {
+    "cpu_probe": 0,
+    "E_SS": 6,
+    "E_SP": 8,
+    "E_ESP": 10,
+    "E_DS": 14,
+    "E_ACTION": 24,
+    "cpu_bad": 42,
+    "native_open": 47,
+    "krel_0": 101,
+    "rrel_1": 151,
+    "state_bad": 174,
+    "state_unlock": 176,
+    "krel_2": 179,
+    "open_init": 183,
+    "krel_3": 194,
+    "open_path_set": 205,
+    "rrel_4": 206,
+    "krel_5": 225,
+    "open_path_ready": 235,
+    "open_engine": 247,
+    "open_super": 250,
+    "krel_6": 258,
+    "open_done": 272,
+    "native_attach": 273,
+    "krel_7": 277,
+    "native_close": 282,
+    "krel_8": 308,
+    "rrel_9": 318,
+    "krel_10": 334,
+    "close_failed": 342,
+    "close_done": 345,
+    "native_view_closed": 346,
+    "closed_super": 358,
+    "krel_11": 362,
+    "native_expose": 367,
+    "krel_12": 378,
+    "krel_13": 383,
+    "D_WINDOW": 384,
+    "D_CPU": 386,
+    "D_BUSY": 387,
+    "D_RESTORED": 388,
+    "D_DIALOG": 390,
+    "krel_14": 391,
+    "krel_15": 396,
+    "expose_done": 400,
+    "native_select": 401,
+    "rrel_16": 422,
+    "select_done": 459,
+    "native_key": 463,
+    "rrel_17": 495,
+    "rrel_18": 521,
+    "key_unhandled": 547,
+    "key_super": 556,
+    "krel_19": 560,
+    "native_command": 565,
+    "not_goto": 636,
+    "generic_action": 652,
+    "activate_open": 661,
+    "selected_file": 700,
+    "rrel_20": 731,
+    "save_selection": 755,
+    "rrel_21": 772,
+    "rrel_22": 787,
+    "accept_save": 811,
+    "command_end": 842,
+    "command_done": 847,
+    "ui_call": 848,
+    "krel_23": 854,
+    "krel_24": 862,
+    "get_entry": 869,
+    "read_text": 883,
+    "rrel_25": 892,
+    "write_text": 919,
+    "rrel_26": 924,
+    "focus_text": 941,
+    "selector_path": 970,
+    "rrel_27": 976,
+    "rrel_28": 990,
+    "sync_editor": 1005,
+    "rrel_29": 1010,
+    "focus_worksheet": 1064,
+    "sync_done": 1073,
+    "finish_action": 1078,
+    "rrel_30": 1090,
+    "show_help": 1139,
+    "show_open": 1151,
+    "show_save": 1162,
+    "set_save_name": 1185,
+    "show_fill": 1193,
+    "show_dialog": 1196,
+    "fill_focus_check": 1221,
+    "dismiss_current": 1237,
+    "dialog_status": 1242,
+    "save_status": 1256,
+    "fill_status": 1266,
+    "write_status": 1275,
+    "finish_ui": 1281,
+    "dismiss_dialog": 1293,
+    "dismiss_done": 1315,
+    "init_selector": 1318,
+    "init_selector_done": 1346,
+    "engine_enter": 1351,
+    "rrel_31": 1366,
+    "native_poll": 1433,
+    "poll_interrupt_window": 1455,
+    "native_file": 1476,
+    "f_open": 1576,
+    "krel_32": 1580,
+    "f_create": 1586,
+    "krel_33": 1592,
+    "f_read": 1598,
+    "krel_34": 1601,
+    "f_write": 1615,
+    "krel_35": 1618,
+    "f_count": 1632,
+    "f_close": 1637,
+    "krel_36": 1640,
+    "f_rename": 1650,
+    "krel_37": 1651,
+    "f_delete": 1661,
+    "krel_38": 1662,
+    "f_push_directory": 1672,
+    "krel_39": 1675,
+    "krel_40": 1682,
+    "krel_41": 1690,
+    "f_pop_directory": 1698,
+    "krel_42": 1699,
+    "f_directory_ok": 1703,
+    "f_result": 1706,
+    "f_neg": 1741,
+    "f_restore": 1744,
+    "repaint": 1758,
+    "krel_43": 1767,
+    "krel_44": 1775,
+    "repaint_done": 1779,
+    "draw_native": 1780,
+    "rrel_45": 1796,
+    "krel_46": 1809,
+    "krel_47": 1817,
+    "draw_loop": 1836,
+    "krel_48": 1851,
+    "krel_49": 1868,
+    "draw_text": 1874,
+    "krel_50": 1878,
+    "krel_51": 1894,
+    "draw_next": 1898,
+    "draw_cpu_error": 1906,
+    "krel_52": 1915,
+    "krel_53": 1922,
+    "krel_54": 1938,
+    "draw_done": 1942,
+    "spaces": 1951,
+    "unsigned_text": 1989,
+    "decimal": 2151,
+    "rounded": 2710,
+    "errnames": 2720,
+    "h.0": 2764,
+    "default_filename": 2908,
+    "__bss_start": 2944,
+    "operations": 2944,
+    "parse_depth": 2948,
+    "eval_depth": 2952,
+    "message": 2976,
+    "consume": 3069,
+    "undo_ready": 3136,
+    "changed": 3140,
+    "s_copy.part.0": 3152,
+    "staging": 3168,
+    "m_copy": 3233,
+    "m_zero": 3309,
+    "s_len": 3369,
+    "s_eq": 3421,
+    "s_copy": 3493,
+    "ascii_upper": 3545,
+    "reference": 3592,
+    "digit": 3920,
+    "error_name": 3961,
+    "address": 4014,
+    "cell_name": 4145,
+    "format_number": 4192,
+    "parse_number": 4429,
+    "find_cell": 4701,
+    "unary": 4817,
+    "term": 7966,
+    "expression": 8256,
+    "evaluate_cell": 8570,
+    "put_cell": 9034,
+    "new_book": 9579,
+    "recalculate": 9663,
+    "edit_cell": 9805,
+    "cell_display": 9967,
+    "copy_range": 10275,
+    "undo_book": 11906,
+    "fnv_bytes": 12219,
+    "ieee64": 12299,
+    "sort_cells": 12851,
+    "replace_ext": 13147,
+    "iequal": 13357,
+    "get_byte": 13498,
+    "flush": 13654,
+    "emit": 13791,
+    "record": 13946,
+    "read_line.constprop.0": 14050,
+    "reset_session": 14312,
+    "normalize_path": 14358,
+    "file_digest": 15572,
+    "same_version": 15910,
+    "unique_path": 16079,
+    "write_master": 16355,
+    "write_view": 17188,
+    "read_document": 17954,
+    "save_document": 20314,
+    "__udivdi3": 21915,
+    "keep_visible": 22274,
+    "delete_selection": 22403,
+    "update_edit": 22558,
+    "book": 22656,
+    "begin_edit": 22761,
+    "sync_cell": 22892,
+    "rect": 23092,
+    "text": 23253,
+    "new_sheet": 23451,
+    "commit": 23546,
+    "move_cell": 23777,
+    "cat.constprop.0": 23997,
+    "document_io": 24099,
+    "prepare_display": 25039,
+    "native_action": 27833,
+    "file_open": 31501,
+    "file_create_new": 31542,
+    "file_read": 31583,
+    "file_write": 31628,
+    "file_close": 31673,
+    "file_rename": 31714,
+    "file_remove": 31757,
+    "__code_size": 31798,
+    "export_size": 42116,
+    "export_hash": 42120,
+    "writer_size": 42124,
+    "writer_hash": 42128,
+    "writer_failed": 42132,
+    "writer_count": 42136,
+    "writer_fd": 42140,
+    "reader_failed": 42144,
+    "reader_count": 42148,
+    "reader_at": 42152,
+    "reader_fd": 42156,
+    "buffer": 42176,
+    "order": 42688,
+    "view_known": 43712,
+    "master_known": 43716,
+    "saved_view_size": 43720,
+    "saved_view_hash": 43724,
+    "saved_master_size": 43728,
+    "saved_master_hash": 43732,
+    "document_path": 43744,
+    "pending_action": 43824,
+    "native_dirty": 43828,
+    "first_col": 43832,
+    "first_row": 43836,
+    "chosen_col": 43840,
+    "chosen_row": 43844,
+    "edit_scroll": 43848,
+    "edit_anchor": 43852,
+    "edit_cursor": 43856,
+    "edit_active": 43860,
+    "key_handled": 43864,
+    "key_flags": 43866,
+    "key_char": 43868,
+    "pointer_info": 43870,
+    "pointer_y": 43872,
+    "pointer_x": 43874,
+    "native_success": 43876,
+    "native_focus": 43878,
+    "native_sync": 43880,
+    "native_request": 43882,
+    "native_path_ok": 43884,
+    "dialog_disk": 43886,
+    "sheet_disk": 43888,
+    "dialog_file": 43904,
+    "dialog_dir": 44032,
+    "sheet_dir": 44160,
+    "selected_name": 44264,
+    "editor_text": 44288,
+    "aux_entry": 44352,
+    "address_entry": 44480,
+    "entry": 44512,
+    "drawing_count": 44640,
+    "drawing": 44672,
+    "__bss_end": 53184,
+    "__engine_used": 53184,
+    "STACK_TOP": 65504
+  },
+  "kernel_ordinals": [
+    0,
+    5,
+    6,
+    51,
+    52,
+    53,
+    54,
+    56,
+    57,
+    58,
+    59,
+    73,
+    74,
+    75,
+    76,
+    150,
+    169,
+    211,
+    212,
+    330,
+    336,
+    355,
+    359,
+    362,
+    366,
+    446,
+    447,
+    489
+  ],
+  "kernel_relocation_count": 38,
+  "resource_count": 12,
+  "dos_or_bios_interrupt_instructions": 0,
+  "note": "No 2.x libraries; no MINICALC.EXE is loaded. The source uses native GEOS calls only."
+}

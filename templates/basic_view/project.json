@@ -1,0 +1,13 @@
+{
+  "sdk": "pcgeos1-sdk-0.1",
+  "long_name": "Hello GEOS",
+  "permanent_name": "hello",
+  "token": "HLO1",
+  "output": "HELLO.GEO",
+  "release": [0, 1, 0, 0],
+  "protocol": [1, 0],
+  "viewport": [500, 300],
+  "sources": ["src/app.c"],
+  "help": "src/help.txt",
+  "native_stack_bytes": 8192
+}

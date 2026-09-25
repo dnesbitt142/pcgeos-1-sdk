@@ -1,0 +1,8 @@
+{
+  "reproduced": true,
+  "independent_output_directory": true,
+  "sha256_before": "0d3de500b3d6cce7da9f654fd4c5a035e1c0630a9479e800e973bab56a62652a",
+  "sha256_after": "0d3de500b3d6cce7da9f654fd4c5a035e1c0630a9479e800e973bab56a62652a",
+  "geode_bytes": 107650,
+  "method": "Rebuilt all C and native assembly objects into a fresh build directory; compared final geode byte hash."
+}

@@ -1,0 +1,60 @@
+MINICALC NATIVE 0.4 - VGA / IN-CELL EDITING / NATIVE HELP
+======================================================
+Native Ensemble 1.x .GEO. No external EXE or INI changes.
+THIS BUILD HAS NOT BEEN BOOT-TESTED IN DOS/GEOS.
+
+UPGRADE FROM 0.3
+---------------
+1. SAVE your current worksheet to MCS in the old version. Keep a separate
+   copy of the MCS master and its WK1 companion. An unsaved session snapshot
+   is not an upgrade path; the new private-state build tag is different.
+2. Use a disposable copy or snapshot. Exit GEOS. Back up the old
+   MINICALC.GEO outside active application directories. Replace it in the
+   same WORLD directory with this package's top-level MINICALC.GEO.
+   Keep only one active version.
+3. Restart GEOS and open MiniCalc Native at 640 x 480 VGA. Check that the
+   complete window and rightmost worksheet column are visible.
+
+FIRST IN-CELL TEST
+------------------
+Click A1 and type 10, then Enter. Type 20, Enter. Type =SUM(A1:A2), Enter.
+A3 should show 30. Click A1, type 100, Enter. A3 should show 120.
+Typing should appear IN THE CELL, without first clicking Formula.
+
+Click A3 and press F2, or double-click A3. The expression =SUM(A1:A2)
+and its caret should appear in the cell. Move Left/Right and make a partial
+edit. Escape should restore the original input. Enter accepts the change.
+Tab moves right; arrow keys select cells outside an edit.
+
+HELP TEST
+---------
+Help should be on the title bar, not a fourth menu. Click it or press F1.
+A native scrollable help-text dialog should appear. Try Page Down,
+Page Up, the scroll bar, and Close. No separate HLP file is required.
+The DOS GEOHELP program is not used.
+
+SAVE / REOPEN
+-------------
+File > Save As opens the native file selector. Choose a test folder and a
+NEW name, such as VGA04.MCS. Save and check the success message. New, then
+File > Open, should reopen the master and its retained formulas.
+The companion WK1 has values only. KEEP THE MCS MASTER.
+
+No Viewer, DOS MiniCalc, system library, display driver, specific UI or
+GEOS.INI setting is changed. Use the installation's existing fonts.
+
+TARGET AND SCOPE
+----------------
+80386 or newer; no floating-point coprocessor required.
+Supplied GeoWorks Pro 1.2 interfaces: kernel 622.3, UI.GEO 693.0.
+VGA content target: 512 x 280 plus native chrome/controls. Actual outer
+window sizing, native help and physical keyboard focus remain unbooted.
+256 populated cells; A1-Z999; 63 ASCII input characters; four decimals.
+Save explicitly before closing. Session restoration is not a backup.
+
+ROLLBACK
+--------
+Save MCS files, exit GEOS, remove the new active geode and restore the old
+backed-up MINICALC.GEO. Open saved MCS files explicitly. Keep one active
+version only. Do not delete the whole STATE directory or replace UI.GEO.
+Record any exact error message and a 640 x 480 screenshot.

@@ -1,0 +1,31 @@
+MINICALC NATIVE 0.4
+
+A small spreadsheet for Ensemble 1.x.
+
+SELECTING AND ENTERING CELLS
+Click a cell, then type a number, label or formula. Typing replaces that cell's previous input. Press Enter to accept and move down. Shift+Enter moves up; Tab and Shift+Tab move right and left.
+
+EDITING AN EXISTING VALUE OR FORMULA
+Press F2 or double-click a cell to edit its original input without replacing it. Left/Right and Home/End move the caret. Hold Shift to select text; Ctrl+A selects the whole input. Backspace and Delete remove text. Escape cancels an uncommitted edit. Enter accepts it.
+
+The Formula field also shows the selected cell's original input. It remains available for editing long formulas. Enter in that field accepts the entry and moves down. Edit > Revert Edit restores the stored cell.
+
+MOVING AROUND
+Outside an edit, arrow keys select nearby cells. Ctrl+Home selects A1. The Cell field and Go jump to an address such as D50. View commands show previous or next rows and columns. Cells range from A1 to Z999.
+
+FORMULAS
+Start a formula with =. Example: =SUM(A1:A2). Change either input and the total recalculates. Arithmetic includes +, -, *, /, parentheses and percentages. Functions: SUM, AVERAGE, MIN, MAX, COUNT, ABS, ROUND. Use $A$1 to keep a reference fixed when filling.
+
+FILE OPEN AND SAVE AS
+Use the native File menu dialogs to choose a folder and an MCS file. Save As needs a new DOS 8.3 filename, such as BUDGET.MCS. Save writes the current sheet. Keep independent backups.
+
+Each save creates an MCS working master retaining formulas and a WK1 viewing copy containing values only. Keep the MCS file! Unrelated Quattro WQ1/WK1 imports are not supported. The saved directory is retained even after browsing another folder and cancelling.
+
+EDIT MENU
+Clear Cell empties the selected cell. Undo / Redo provides one level. Fill Range copies the selected input to a range such as B1:B10 and adjusts relative formula references. Existing target cells are replaced.
+
+LIMITS AND SAFE USE
+One sheet; 256 populated cells; 63 characters per input; four decimal places. Calculation errors are shown explicitly. This version has no charts, printing or multiple sheets. Save explicitly before closing; session restoration is not a backup.
+
+HELP
+This is the Ensemble 1.x native help text control. Use its scroll bar or Page Up / Page Down buttons. Close returns to the worksheet. F1 or the title-bar Help button opens this help.

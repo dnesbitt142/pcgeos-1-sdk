@@ -1,0 +1,30 @@
+{
+  "target_templates": {
+    "SPINTEXT.GEO": "848f5afb43a2184b01d2a4ad3231957b6ab9936006b23b4b2a260d1224d44370",
+    "NOTEPAD.GEO": "edc48848ff4b9d2880e715bbb29532f14b3b54293c45159c467e33e2af841d1b",
+    "VIEWER.GEO": "3d433a39c455a9cea242763dad0e3f681b4196fb7b1a75a08ca47e1aa8aa4a30",
+    "TERM.GEO": "2d66ac2ff9fd24c4591303b2cba7cec6f40f0d52b4f3d75d9e0cdaa5fc1be542"
+  },
+  "builds": [
+    {
+      "toolchain": {
+        "family": "gnu",
+        "version": "gcc (Debian 14.2.0-19) 14.2.0"
+      },
+      "sha256": "803135eef2332e890a883bc318de43cdc742ffd2ba398e2d6becb679c07eb589",
+      "bytes": 70954,
+      "resources": 12,
+      "relocations": 41
+    },
+    {
+      "toolchain": {
+        "family": "llvm",
+        "version": "clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)"
+      },
+      "sha256": "3a01613703e332a045ebbc6798730eaa7586ba21757ba16fbe47f769b451029e",
+      "bytes": 70954,
+      "resources": 12,
+      "relocations": 41
+    }
+  ]
+}

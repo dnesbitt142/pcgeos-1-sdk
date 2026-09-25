@@ -1,0 +1,7 @@
+Hello GEOS
+
+This application was built with PC/GEOS 1.x SDK 0.1.
+
+The window, view, title-bar Help trigger and scrollable Help dialog are native Ensemble 1.x objects reconstructed from the exact target distribution.
+
+Click the view or press Enter to exercise an application callback.

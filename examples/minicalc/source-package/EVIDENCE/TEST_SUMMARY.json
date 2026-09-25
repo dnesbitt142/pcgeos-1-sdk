@@ -1,0 +1,27 @@
+{
+  "release": "0.4.0.1",
+  "geode_sha256": "0d3de500b3d6cce7da9f654fd4c5a035e1c0630a9479e800e973bab56a62652a",
+  "geode_bytes": 107650,
+  "passed": 142,
+  "failed": 0,
+  "skipped": 0,
+  "groups": {
+    "calculation_and_document": 42,
+    "hosted_editor_and_ui_model": 32,
+    "static_geode_object_structure": 21,
+    "native_compiled_method_scenarios": 47
+  },
+  "runtime_geos_boot_tested": false,
+  "native_ui_objects_constructed_by_real_geos": false,
+  "vga_outer_window_measured_live": false,
+  "worksheet_view_dimensions": [
+    512,
+    280
+  ],
+  "native_method_count": 30,
+  "native_ui_object_count": 53,
+  "scope": "Compiled native methods use a controlled modeled GEOS interface. These results do not certify the real window layout, help viewer or keyboard focus.",
+  "minimum_observed_private_stack_pointer": 64412,
+  "engine_used_bytes": 53184,
+  "test_log": "ALL_TEST_RESULTS.txt"
+}
